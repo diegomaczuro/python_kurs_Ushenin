@@ -116,10 +116,6 @@ def update_func():
     sol_x_y.margins(0)
 
 
-
-
-
-
 def update(val):
     pr.alpha = pr.alpha_s.val
     pr.betta = pr.betta_s.val
@@ -132,8 +128,6 @@ def update(val):
     update_func()
 
 
-
-
 pr.alpha_s.on_changed(update)
 pr.betta_s.on_changed(update)
 pr.gamma_s.on_changed(update)
@@ -141,11 +135,5 @@ pr.delta_s.on_changed(update)
 pr.step_time_s.on_changed(update)
 pr.x0_s.on_changed(update)
 pr.y0_s.on_changed(update)
-
-
-
-
-
-plt.axis([pr.start_time, pr.stop_time, -10, 10])
 
 plt.show()
